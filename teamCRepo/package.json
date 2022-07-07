@@ -56,7 +56,7 @@
     "eslint-import-resolver-webpack": "0.10.1",
     "eslint-plugin-babel": "5.3.1",
     "eslint-plugin-filenames": "1.3.2",
-    "eslint-plugin-gettext": "git+https://github.com/udemy/eslint-plugin-gettext.git#2d54b8a831c7f5f9c9dbad2e842f30a913c0ca00",
+    "eslint-plugin-gettext": "git+https://github.com/udemy/eslint-plugin-gettext.git#a6503eae55874ce24290af660660e24f51d2d014",
     "eslint-plugin-import": "2.22.1",
     "eslint-plugin-jasmine": "2.10.1",
     "eslint-plugin-jsx-a11y": "6.1.2",
