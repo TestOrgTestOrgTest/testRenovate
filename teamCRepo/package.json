@@ -180,7 +180,7 @@
     "utf-8-validate": "5.0.2",
     "uuid": "3.3.2",
     "video.js": "6.12.1",
-    "videojs-contrib-eme": "3.8",
+    "videojs-contrib-eme": "3.8.1",
     "videojs-contrib-quality-levels": "2.0.9",
     "videojs-mux": "4.2.0",
     "vis-react": "0.4.3",
