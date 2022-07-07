@@ -1,18 +1,22 @@
 {
-  "groupName": "all dependencies",
-  "separateMajorMinor": false,
-  "groupSlug": "all",
   "packageRules": [
     {
-      "matchPackagePatterns": [
-        "*"
-      ],
-      "groupName": "all dependencies",
-      "groupSlug": "all"
+      "groupName": "NPM package",
+      "matchPaths": ["package.json"],
+    },
+    {
+      "groupName": "Gradle package",
+      "matchPaths": ["build.gradle.kts"]
+    },
+    {
+      "groupName": "PEP package",
+      "matchPaths": ["pyproject.toml"]
+    },
+    {
+      "description": "Automatically merge minor and patch-level updates",
+      "matchUpdateTypes": ["minor", "patch", "digest"],
+      "automerge": true
     }
   ],
-  "lockFileMaintenance": {
-    "enabled": false
-  },
   "assigneesFromCodeOwners": true
 }
