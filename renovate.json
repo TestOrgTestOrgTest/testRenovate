@@ -3,14 +3,17 @@
     {
       "groupName": "NPM package",
       "matchPaths": ["package.json"],
+      "extends": ["schedule:at any time"]
     },
     {
       "groupName": "Gradle package",
-      "matchPaths": ["build.gradle.kts"]
+      "matchPaths": ["build.gradle.kts"],
+      "extends": ["schedule:at any time"]
     },
     {
       "groupName": "PEP package",
-      "matchPaths": ["pyproject.toml"]
+      "matchPaths": ["pyproject.toml"],
+      "extends": ["schedule:at any time"]
     },
     {
       "description": "Automatically merge minor and patch-level updates",
