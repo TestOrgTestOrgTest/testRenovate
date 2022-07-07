@@ -1,0 +1,248 @@
+# This contains version numbers for all our Python dependencies for the monolith.
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry]
+name  = "website-django"
+version  = "0.1.1"
+description  = "The Python / Django implementation of Udemy's website and API."
+authors = ["Udemy Engineers <dev@udemy.com>"]
+readme = 'README.md'
+repository  = "https://github.com/udemy/website-django"
+homepage  = "https://www.udemy.com"
+keywords = []
+
+[[tool.poetry.source]]
+name = 'pypi_'  # needed until python-poetry/poetry#3456 is resolved.
+url = 'https://pypi.org/simple'
+secondary = false
+
+[[tool.poetry.source]]
+name = "udemy-pypi"
+url = "https://pypi.udsrv.com/pypi"
+secondary = true
+
+[tool.poetry.dependencies]
+python = "3.8.13"  # Set python to specific version
+asciitree = "0.3.1"
+Babel = "2.5.1"
+beautifulsoup4 = "4.6.0"
+bleach = "3.1.0"
+boto = "2.49.0"
+boto3 = "1.16.63"
+celery = "4.4.7+ud2"
+chardet = "3.0.4"
+chronos-python = "0.38.0"
+configparser = "^3.8.1"
+cryptography = "3.2.1"
+defusedxml = "0.7.1"
+Django = "~2.2"
+django-activity-stream = "0.8.0"
+django-appconf = "1.0.1"
+django-argonauts = "1.0.1"
+django-autoslug = "1.9.6"
+django-braces = "1.14.0"
+django-cors-headers = "2.1.0"
+django-crispy-forms = "1.7.2"
+django-dirtyfields = "1.3.1"
+django-el-pagination = "3.1.0"
+django-environ = "0.4.4"
+django-extensions = "3.0.4"
+django-filter = "2.2"
+django-import-export = "^1.2"
+django-model-utils = "3.0.0"
+django-oauth-toolkit = "1.0.0"
+django-object-actions = "0.10.0"
+django-picklefield = "0.3.1"
+django-polymorphic = "2.1.2"
+django-prefetch = { git = "https://github.com/udemy/django-prefetch", tag = "v2.0.0-ud1" }
+django-redis = "^4.12.1"
+django-rest-swagger = { git = "https://github.com/udemy/django-rest-swagger", tag = "0.3.10-ud1" }
+django-simple-history = "2.8.0"
+django-split-settings = "0.2.5"
+django-statici18n = "1.9.0"
+django-user-agents = "0.3.2"
+django-watchman = "0.15.0"
+django-webpack-loader = "0.5.0"
+django-widget-tweaks = "1.4.1"
+djangorestframework = "3.7.7"
+dnspython = "1.15.0"
+drf-ujson = "1.2"
+editdistance = "0.3.1"
+elasticsearch = "7.8.1"
+elasticsearch-dsl = "7.3.0"
+furl = "2.1.0"
+fysom = "2.1.2"
+google-api-python-client = "1.7.9"
+google-cloud-translate = "1.6.0"
+googleads = "^20.0"
+hashids = "1.1.0"
+humanize = "0.5.1"
+iptools = "0.6.1"
+itsdangerous = "0.24"
+jsonfield = "2.0.2"
+more-itertools = "4.2.0"
+moto = "1.3.16"
+python-jose = "<=3.2.0"  # subdependency of moto (v3.3.0 uses F-strings, so OK to remove post Python upgrade)
+mysqlclient = "2.0.1"
+nameparser = "0.3.4"
+oauth2client = "4.1.1"
+oauthlib = "2.1.0"
+ordered-set = "2.0.1"
+paypal = "1.2.1"
+paypalrestsdk = "1.13.1"
+pbkdf2 = "1.3"
+Pillow = "6.2.2"
+polib = "1.0.7"
+prettytable = "0.7.2"
+psutil = "5.8.0"
+pusher = "1.2.3"
+py-getch = "1.0.1"
+pyasn1-modules = "0.2.1"
+pyasn1 = "0.4.5"
+pycaption = { git = "https://github.com/udemy/pycaption.git", tag = "1.1.0.ud4" }
+PyJWT = "1.7.1"
+pyminfraud = "1.0.5"
+pysftp = "0.2.8"
+python-intercom = "3.1.0"
+python-dateutil = "2.8.0"
+python-memcached = { git = "https://github.com/udemy/python-memcached.git", tag = "v1.59.ud1" }
+pytz = "2019.3"
+PyYAML = "^5.1"
+redis = "^3.5.0"
+redlock-py = "1.0.8"
+regex = "2015.05.28"
+requests = "2.25.1"
+responsys = { git = "https://github.com/udemy/responsys.git", tag = "0.2.4.ud1" }
+rsa = "3.1.4"
+selenium = "2.45.0"
+sendgrid = "3.0.0"
+sentry-sdk = "0.14.4"
+social-auth-app-django = "3.1.0"
+social-auth-core = "3.0.0"
+Sift = "5.0.1"
+simplejson = "3.8.0"
+six = "1.14.0"
+slackclient = { git = "https://github.com/udemy/python-slackclient.git", tag = "v1.3.2.ud2" }
+smtpapi = "0.2.0"
+sphinx-rtd-theme = "0.1.9"
+Sphinx = "1.4.5"
+sqlparse = "0.3"
+suds-jurko = { url = "https://files.pythonhosted.org/packages/bd/6f/54fbf0999a606680d27c69b1ad12dfff62768ecb9fe48524cebda6eb4423/suds-jurko-0.6.tar.bz2" }
+tablib = "0.11.5"
+tabulate = "0.8.3"
+tldextract = "1.7.5"
+traitlets = ">=4.3.3" # used by ipython/ipdb: placed here to ensure poetry pulls in this dependency (is inconsistent)
+twilio = "3.6.7"
+ua-parser = "0.7.3"  # used by user-agents
+django-meta = "1.4"
+ud-py-moneyed = "0.6.2"
+Unidecode = "0.4.17"
+urllib3 = "1.26.6"
+user-agents = "1.1.0"  # used by django-user-agents
+wheel = "0.36.2"
+zdesk = "2.7.1"
+facebook-business = "5.0.0"
+amqp = "~2.6.1"
+kombu = "~4.6.11"
+awscli = "1.18.223" # keep this locked at a patch version to keep poetry from taking too long
+python-daemon = "^2.2"
+structlog = "^20.1"
+ipython = "7.9.0"
+weasyprint = "52.5"
+opengraph_py3 = "^0.71.0"
+psycopg2 = "^2.8"
+visitor-tracking-lib = "1.0.9"
+grpcio-tools = "1.44.0"
+mock = "^3.0"
+m3u8 = "^0.3.10"
+stripe = "2.32.1"
+pybreaker = "^0.6.0"
+taxamo-v2 = "0.2.3"
+rest_condition = "1.0.3"
+graphene = "2.1.8"  # pinned to prevent breaking change in 2.1.9 when id is passed to NodeField__init__()
+graphene-django = "2.10.1"
+corepy-strings = "^1.0.0"
+corepy-federation = "^1.2.2"
+gimme-aws-creds = "^2.3.1"
+corepy-cache = "4.2.6"
+Adyen = "2.3.0"
+corepy_pub_sub = "^1.0.8"
+corepy-logging = "1.3.4"
+corepy-graphql = "^7.1.7"
+mpegdash = "^0.2.0"
+corepy_service_auth_helpers = "^5.2.1"
+django-jsonfield-backport = "^1.0.2"
+grpcio-status = "1.44.0"
+kubernetes = "v17.17.0"
+parameterized = "^0.8.1"
+corepy_kafka = "^2.0.12"
+pyotp = "^2.6.0"
+corepy_grpc_helpers = "^1.0.1"
+zxcvbn = "4.4.28"
+corepy-datadog = "5.3.4"
+corepy_bot_detection = "1.0.2"
+corepy-visitor-tracking = "1.1.17"
+pynacl = "^1.4.0"
+corepy-protobufs = "1.202207051358"
+corepy-experimentation-platform = "1.3.10"
+httpsig = "1.3.0"
+pycryptodome = "^3.10.1"
+marketorestpython = "0.5.12"
+setuptools = "57.5.0"
+corepy-event-tracking = "3.0.0"
+jwcrypto = "^1.0"
+paramiko = "2.8.1" # Pinning due to sFTP incompatibility https://www.paramiko.org/changelog.html#2.9.0
+cachetools = "4.2.4"
+corepy-kafka = "^2.0.13"
+corepy-secure-content = "1.3.1.dev1"
+html5lib = "^1.1"
+corepy-communication = "4.1.0.dev5"
+protobuf = "3.20.0"
+dictdiffer = "^0.9.0"
+deepl = "^1.8.0"
+
+[tool.poetry.dev-dependencies]
+corepy_testing = "^1.1.0"
+coverage = "6.3.2"
+diff-cover = "0.9.12"
+django-debug-toolbar = "1.11"
+django-nose = { git = "https://github.com/udemy/django-nose", tag = "v1.4.6-ud1" }
+fabric = "2.3.1"
+fakeredis = "^1.5.0"
+flake8-string-format = "0.2.3"
+freezegun = "1.1.0"
+ipdb = "^0.8"
+isort = "4.3.21"
+model_bakery = "1.0.2"
+nose = "1.3.7"
+nose-parallel = "0.2.1"
+nose-randomly = "1.2.5"
+nose-runnable-test-names = "0.1"
+nose-timer = "0.5.0"
+pact-python = "1.2.11"
+redislite = { git = "https://github.com/udemy/redislite.git", branch = "m1-support"}
+toml = "0.10.0"
+yanc = "0.2.4"
+passlib = "^1.7"
+snakeviz = "^2.0"
+bandit = "^1.6"
+flake8 = "3.9.2"
+
+# black compat
+[tool.isort]
+line_length=100
+multi_line_output=3
+include_trailing_comma=true
+force_grid_wrap=0
+use_parentheses=true
+known_third_party="celery,django_nose,intercom,memcache,prefetch,pycaption,responsys,rest_framework_swagger"
+
+
+[tool.black]
+line-length = 100
+skip-string-normalization = true
+target-version = ['py35']
+include = '\.pyi?$'
